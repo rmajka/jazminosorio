@@ -1,0 +1,197 @@
+/*====================== Clases ====================*/
+
+.avatar {
+  width: 170px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: 2px solid black;
+}
+
+.contenedor-izquierdo {
+  position: relative;
+  height: auto;
+  width: 80%;
+  background-color: #ecfcf5;
+}
+
+.contenedor-derecho {
+  background-image: url("/imagenes/fondo11.png");
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  width: 20%;
+  background-color: rgba(4, 78, 121, 0.774);
+}
+
+.contenedor-padre {
+  display: flex;
+  background-color: #ecfcf5;
+}
+
+.contenido-principal {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contenido-principal p {
+  font-size: 1.3rem;
+  font-family: "Cabin", sans-serif;
+  margin-top: 0;
+  padding-right: 90px;
+}
+
+.contenido-principal h2 {
+  color: rgb(22, 75, 136);
+  font-size: 2rem;
+}
+
+.avatar-con-nombre {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+.footer {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(8, 90, 145);
+}
+
+.footer a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer a:hover {
+  color: antiquewhite;
+}
+
+.figcaption {
+  max-width: 900px;
+  width: auto;
+  position: relative;
+  left: 200px;
+  bottom: 160px;
+  font-family: "Oswald", sans-serif;
+}
+
+.figcaption h2 {
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.navegacion {
+  float: left;
+  margin-top: 150px;
+  margin-left: 5px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Cabin", sans-serif;
+  color: antiquewhite;
+}
+
+.navegacion a:hover {
+  color: rgb(22, 75, 136);
+}
+
+.navegacion li {
+  padding: 6px;
+  color: antiquewhite;
+}
+
+.navegacion-responsive {
+  display: none;
+}
+
+.scroll-contenedor {
+  height: 500px;
+  overflow: auto;
+}
+
+/*===============================================================
+======================== responsive design ======================
+===============================================================*/
+
+@media only screen and (max-width: 1400px) {
+  /*====================== Clases ====================*/
+
+  .avatar {
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 5px;
+    border: 2px solid black;
+  }
+
+  .avatar-con-nombre {
+    margin-left: 5px;
+    font-family: "Cabin", sans-serif;
+  }
+
+  .contenedor-izquierdo {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    background-color: #ecfcf5;
+  }
+
+  .contenedor-derecho {
+    display: none;
+  }
+
+  .contenido-principal {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contenido-principal h2 {
+    color: rgb(22, 75, 136);
+    font-size: 1.6rem;
+    font-family: "Cabin", sans-serif;
+  }
+
+  .contenido-principal p {
+    font-family: "Cabin", sans-serif;
+  }
+
+  .figcaption {
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .footer {
+    height: 40px;
+  }
+
+  .navegacion-responsive {
+    display: inline;
+    height: 60px;
+  }
+
+  .navegacion-responsive li {
+    display: inline;
+  }
+
+  .navegacion-responsive ul li {
+    margin-bottom: 16px;
+  }
+
+  .navegacion-responsive a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "Cabin", sans-serif;
+    color: rgb(17, 13, 8);
+    margin: 4px;
+  }
+
+  .navegacion-responsive a:hover {
+    color: rgb(22, 75, 136);
+  }
+}

@@ -15,7 +15,7 @@
 }
 
 .contenedor-derecho {
-  background-image: url("imagenes/fondo11.png");
+  background-image: url("/imagenes/fondo11.png");
   background-repeat: no-repeat;
   position: relative;
   height: auto;

@@ -15,7 +15,7 @@
 }
 
 .contenedor-derecho {
-  background-image: url("fondo11.png");
+  background-image: url("/imagenes/fondo11.png");
   background-repeat: no-repeat;
   position: relative;
   height: auto;
@@ -37,7 +37,7 @@
   font-size: 1.3rem;
   font-family: "Cabin", sans-serif;
   margin-top: 0;
-  padding-right: 90px;
+  hyphens: auto;
 }
 
 .contenido-principal h2 {
@@ -70,8 +70,7 @@
 }
 
 .figcaption {
-  max-width: 900px;
-  width: auto;
+  max-width: 80%;
   position: relative;
   left: 200px;
   bottom: 160px;
@@ -110,32 +109,31 @@
 }
 
 .scroll-contenedor {
-  height: 500px;
   overflow: auto;
+  height: 600px;
 }
 
 /*===============================================================
 ======================== responsive design ======================
 ===============================================================*/
 
-@media only screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   /*====================== Clases ====================*/
 
   .avatar {
-    width: 130px;
-    border-radius: 50%;
+    width: 160px;
+    border-radius: 0;
     margin-top: 5px;
     border: 2px solid black;
   }
 
   .avatar-con-nombre {
-    margin-left: 5px;
     font-family: "Cabin", sans-serif;
+    text-align: center;
   }
 
   .contenedor-izquierdo {
-    height: auto;
-    overflow: auto;
+    display: grid;
     width: 100%;
     background-color: #fff;
   }
@@ -145,14 +143,17 @@
   }
 
   .contenido-principal {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    hyphens: auto;
   }
 
   .contenido-principal h2 {
     color: rgb(22, 75, 136);
     font-size: 1.6rem;
     font-family: "Cabin", sans-serif;
+
   }
 
   .contenido-principal p {
@@ -161,26 +162,19 @@
 
   .figcaption {
     position: relative;
-    left: 10px;
-    bottom: 5px;
+    top: 10px;
+    left: 13%;
+    right: auto;
     font-family: "Oswald", sans-serif;
-  }
-
-  .footer {
-    height: 40px;
   }
 
   .navegacion-responsive {
     display: inline;
-    height: 60px;
+    text-align: center;
   }
 
   .navegacion-responsive li {
     display: inline;
-  }
-
-  .navegacion-responsive ul li {
-    margin-bottom: 16px;
   }
 
   .navegacion-responsive a {
@@ -193,5 +187,9 @@
 
   .navegacion-responsive a:hover {
     color: rgb(22, 75, 136);
+  }
+
+  .footer {
+    height: 40px;
   }
 }
